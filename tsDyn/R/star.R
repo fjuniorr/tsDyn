@@ -597,7 +597,7 @@ star <- function(x, m=2, noRegimes, d = 1, steps = d, series, rob = FALSE,
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # 2. Linearity testing
   if (trace) cat("Testing linearity...   ")
-  testResults <- linearityTest.star(str, z, rob=rob, sig=sig, trace = trace)
+  testResults <- linearityTest.star(str, z, rob=rob, sig=1, trace = trace)
   pValue <- testResults$pValue;
   increase <- ! testResults$isLinear;
 
